@@ -1,0 +1,151 @@
+ COMMANDS
+
+ 1) mysqli_connect("hostname","user","pass") : connects to mysql  ==>you can add the database name here instead at the _select-db
+
+ 2) mysqli_select_db("database name") : makes the selected database active
+
+ 3) mysqli_query("query") : every command is written here
+
+ 4) mysqli_fetch_rows("results variable from query")  : to fetch the row
+
+ 5) mysqli_fetch_array("results variable from query")  : to fetch column data
+
+ 6) mysqli_fetch_assoc("results variable from query") : for associated array,use key here to search like in associated array
+
+
+ ================================================================ONLINE DATABASE COMMANDS===========================================================================
+
+ create database vansh;
+
+ create table employe
+(
+  empid int(11) primary key,
+  empname varchar(4),
+  empsalary int
+  );
+
+  alter table employe add
+  empaddress varchar(40);
+
+
+  alter table employe modify
+  empaddress varchar(402);
+
+
+  drop table employe
+  ==================================
+
+  create table registration
+(
+  username varchar(20) primary key,
+  psswd varchar(20) not null,
+  emailid varchar(20) not null,
+  securityquestion varchar(100) not null,
+  answer varchar(100) not null,
+  gender varchar(10) not null, 
+  hobby varchar(10),
+  )
+
+
+INSERT INTO registration VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8]);
+
+
+
+insert into employee values(1,'vansh',2232),(2,'fdef',323444),(23,'fsaf',322332);
+
+
+SELECT * FROM `employee` WHERE name like 'a%';
+
+select max(salary) from employee;
+
+select min(salary) from employee;
+
+
+=====TO PRINT SECOND MAXIMUM SALARY FROM EMPLOYEE DATA=====
+
+select max(empsalary) from employee where empsalary not in (select max(empsalary) from employee);
+=============or===============
+select * from employee order by empsalary desc limit 1,1        <------ here first 1 is starting point(it starts from 0) and second 1 is no. of rows to print
+
+===========================================================
+
+SELECT * FROM `employee` WHERE empid in(9,19);
+SELECT * FROM `employee` WHERE empid not in(9,19);
+delete from employee where impid in(2,1);
+
+===========================================================
+
+select * from employee where emp_id between 9 and 90;
+
+
+
+
+======================================================================================================================================================================================================================================================================================================================================
+
+
+
+create table category
+(
+  cat_id int primary key,
+  cat_name varchar(20)
+);
+ 
+ create table product
+(
+   cat_id int,
+   pro_id int primary key,
+   pro_name varchar(20),
+   pro_cost int,
+   pro_disc varchar(20),
+   foreign key (cat_id)
+   references category (cat_id)
+   on delete cascade
+   on update cascade
+);
+
+
+insert into category values(1,'car'),(2,'bike');
+
+
+insert into product(1 , 11 , 'screen' , 1212 , 'efihekf'),(1 , 22 , 'rim' , 12434 , 'ekf'),(2 , 33 , 'light' , 124656 , 'efppppkf'),(2 , 44 , 'brake' , 125423 , 'ef'),(2 , 55 , 'handle' , 39895 , 'efasdaihekf')
+
+select category.cat_id,category.cat_name,product.pro_id,product.pro_name from category,product where category.cat_id = product.cat_id;
+select category.cat_id,category.cat_name,product.pro_id,product.pro_name from category,product where category.cat_id = product.cat_id and category.cat_id=1;
+===================================================================================================================================================================
+
+create table user (id int(11) auto_increment primary key,
+                      username varchar(20)  
+                  );
+insert into user(username) values('vansh');
+
+
+===================================================================================================================================================================
+
+we can fetch the record from one than alone
+
+
+
+
+we can fetch common record from more than one  table with the help of joint
+
+
+types of join:
+(.) auto join
+(.) self join
+(.)inner join
+
+ 
+>> full auto joint[not in mysql]
+>> left auto join   :   fetch all the record from left side if record is not match from right side prints null value .
+>> right auto join  :   fetch all the record from the right side if record is not match from left side prints null value .
+
+recursive relationship joint
+self
+
+
+what is view?
+it is just like a virtual table .we can fetch the record from one table and is stored in a view.
+they have no physical storge,only virtual.
+
+create view abc as
+[ ....  select command ....]

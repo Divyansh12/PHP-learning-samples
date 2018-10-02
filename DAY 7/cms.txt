@@ -1,0 +1,5 @@
+content management system (cms)
+Changes can be made in the system even after uploading
+the code.
+All the pages are dynamic
+The changes are reflected simultaneously

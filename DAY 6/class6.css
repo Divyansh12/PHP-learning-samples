@@ -1,0 +1,12 @@
+body{background-image: url(Images/Ankatsuken.png);
+background-position: center;
+background-size: auto;}
+ h1{font-size: 20px;
+  background-color: lime;
+   text-align: center;}
+ .r{font-size: 20px;
+  background-color: yellow;
+   text-align: center;}
+ #t1{font-size: 20px;
+    background-color: red;
+     text-align: center;}

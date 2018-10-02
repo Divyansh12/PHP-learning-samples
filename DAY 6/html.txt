@@ -1,0 +1,56 @@
+
+Paragraph                                     Span
+this is a newline element          It is a single line element
+
+Q.
+DTD: Document Type Definition
+DOM: Document Object Module
+
+Q. Why is rt tag used?
+Ans.
+
+Anything related to css is present in head tag
+The info in head is not visible on the page
+
+HTML elements can have attributes:
+Attrbutes come in name and value pair
+
+<!--This is how a comment is entered in hmtl-->
+
+<small>
+<sub>
+<strong>
+<href?:for hyperlink
+
+<ul> unordered list
+<li> unorderedlist
+
+<a>for joining two pagesz:anchor text
+<hr> for horizontal line
+<a href="https://site.com/" target ="blank">
+This is for opening the window in a new browser window
+
+
+ <img>
+ <img src="url">
+ <img src="url" alt = "Image not found">
+
+ <table>
+ <tr>
+ <td>
+ </tr>
+ </td>
+
+
+ <form> tag for all input methods
+ <form action ="url" method "post">
+ textrea cols =
+
+
+ fieldset and legend
+ checkbox
+ select unorderedlist
+
+
+Types Of Elements:
+Block and Inline Elements

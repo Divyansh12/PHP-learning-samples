@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FIRST PAGE</title>
+  </head>
+  <body>
+    <h2 style="text-align:center;color:lime">REGISTRATION</h2>
+    <form name="f" action="reg.php" method="post">
+    <table border="1" align="center">
+      <tr>
+        <td>
+          Username</td>
+        <td>
+          <input type="text" name="username" required/></td>
+      </tr>
+      <tr>
+        <td>
+          Password</td>
+        <td>
+          <input type="password" name="password" required/></td>
+      </tr>
+
+      <tr>
+        <td>
+          Confirm Password</td>
+        <td>
+          <input type="password" name="repassword" required/></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" name="btnsubmit"/></td>
+      </tr>
+      <tr>
+        <td>Security Question</td>
+      <td>
+        <select name="sec_question">
+        <option>Please select any one questions</option>
+        <option>First name</option>
+        <option>Second names</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Enter Answer</td>
+      <td>
+        <input type="password" name="sec" required/></td>
+    </tr>
+    <tr>
+      <td>
+        Gender</td>
+      <td>
+        <input type="radio" name="gender" required/>Male
+        <input type="radio" name="gender" required/>Female</td>
+    </tr>
+    <tr>
+      <td>
+        Date of Birth</td>
+      <td>
+        <input type="date" name="dob" required/></td>
+    </tr>
+    <tr>
+      <td>
+        Email Id</td>
+      <td>
+        <input type="email" name="emailid" required/></td>
+    </tr>
+    <tr>
+      <td>
+        Hobby</td>
+      <td>
+        <input type="checkbox" name="chk[]"/>Music
+        <input type="checkbox" name="chk[]"/>Cricket
+        <input type="checkbox" name="chk[]"/>Badminton</td>
+    </tr>
+    </table>
+    </form>
+  </body>
+</html>

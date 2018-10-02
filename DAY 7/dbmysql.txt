@@ -1,0 +1,14 @@
+In require ,if the file doesn't open or is not found, then the
+remaining script is not executed
+In include, if the file doesn't open or is not found, then the
+rest of the code is executed with error in that part
+
+require_once and include_once are only executed once in php
+code and then error if called again
+
+
+mysqli_connect
+mysqli_query
+mysqli_fetch_row
+mysqli_fetch_array
+mysqli_assoc

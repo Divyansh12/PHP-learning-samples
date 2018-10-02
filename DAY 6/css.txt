@@ -1,0 +1,33 @@
+CSS: Cascading Style Sheets
+it reduces workload
+Added to HTML 4.0
+===========================
+There are three ways to insert CSS:
+Inline-CSS applied on same line
+Internal-CSS applied within page
+External-CSS applied in multiple pages
+===========================
+Type Selector:
+h1{font-size = 20px;}
+===========================
+For an external style Sheet
+save the file with .css extension
+ORDER of Overrriding:
+Inline>Internal>External
+===========================
+Q. What's the difference between class and id?
+=================================
+Responsive Web Design
+
+It makes page look good in any display size
+
+Bootstrap
+
+ For responsive web design, enter the following line of code:
+<meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+<video width ="320" height="320" controls>
+
+
+Q.Which language for client side and server side verification?
